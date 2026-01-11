@@ -1,12 +1,272 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Site</title>
+    <meta name="description" content="Smash Club - Premium Badminton Experience">
+    <title>Smash Club | Elevate Your Game</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Noto+Sans+JP:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>ようこそ！</h1>
-    <p>これは私のホームページです。</p>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="container nav-container">
+            <a href="#" class="logo">SMASH<span class="accent">CLUB</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#bbs">Members</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#join" class="btn-sm">Join Now</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in-up">UNLEASH<br><span class="outline-text">YOUR POTENTIAL</span></h1>
+            <p class="fade-in-up delay-1">バドミントンを、もっとクールに、もっと熱く。</p>
+            <div class="hero-btns fade-in-up delay-2">
+                <a href="#about" class="btn-primary">Explore</a>
+                <a href="#join" class="btn-secondary">Join Us</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">ABOUT US</h2>
+                <p>ただのサークルじゃない。ここは「本気」と「楽しさ」が交差する場所。</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="glass-card reveal">
+                    <div class="icon">🏸</div>
+                    <h3>Improvement</h3>
+                    <p>初心者から上級者まで、それぞれのレベルで限界を超える。プロコーチによる定期指導も。</p>
+                </div>
+                <div class="glass-card reveal delay-1">
+                    <div class="icon">⚡</div>
+                    <h3>Community</h3>
+                    <p>年齢も職業も関係ない。共通言語は「バドミントン」。一生モノの仲間と出会おう。</p>
+                </div>
+                <div class="glass-card reveal delay-2">
+                    <div class="icon">💎</div>
+                    <h3>Environment</h3>
+                    <p>最新の設備と快適なプレイ環境。シャトルやラケットにもこだわり抜いた最高の体験を。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Divider / Quote -->
+    <section class="quote-section">
+        <div class="container">
+            <h3 class="quote-text">"The only way to do great work is to love what you do."</h3>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="section-padding dark-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">SCHEDULE</h2>
+                <p>今月の活動予定</p>
+            </div>
+
+            <div class="table-container fade-in-up">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Level</th>
+                            <th>Location</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1/15 (Mon)</td>
+                            <td>19:00 - 21:00</td>
+                            <td><span class="tag beginner">Beginner</span></td>
+                            <td>City Arena A</td>
+                            <td><a href="#attendance" class="btn-table">Join</a></td>
+                        </tr>
+                        <tr>
+                            <td>1/17 (Wed)</td>
+                            <td>18:30 - 21:30</td>
+                            <td><span class="tag all">All Levels</span></td>
+                            <td>Sports Center Main</td>
+                            <td><a href="#attendance" class="btn-table">Join</a></td>
+                        </tr>
+                        <tr>
+                            <td>1/20 (Sat)</td>
+                            <td>13:00 - 17:00</td>
+                            <td><span class="tag advanced">Advanced</span></td>
+                            <td>City Arena B</td>
+                            <td><a href="#attendance" class="btn-table">Join</a></td>
+                        </tr>
+                        <tr>
+                            <td>1/22 (Mon)</td>
+                            <td>19:00 - 21:00</td>
+                            <td><span class="tag beginner">Beginner</span></td>
+                            <td>City Arena A</td>
+                            <td><a href="#attendance" class="btn-table">Join</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attendance Section -->
+    <section id="attendance" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">ATTENDANCE</h2>
+                <p>練習参加フォーム</p>
+            </div>
+
+            <div class="form-wrapper glass-form reveal">
+                <form id="attendance-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="att-name" class="static-label">Name</label>
+                            <input type="text" id="att-name" required placeholder="山田 太郎">
+                        </div>
+                        <div class="form-group">
+                            <label for="att-date" class="static-label">Date</label>
+                            <select id="att-date" required>
+                                <option value="">参加する日程を選択</option>
+                                <option value="1/15">1/15 (Mon)</option>
+                                <option value="1/17">1/17 (Wed)</option>
+                                <option value="1/20">1/20 (Sat)</option>
+                                <option value="1/22">1/22 (Mon)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="static-label">Status</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="status" value="join" checked> 参加</label>
+                            <label><input type="radio" name="status" value="late"> 遅刻</label>
+                            <label><input type="radio" name="status" value="absent"> 欠席</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary block-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- BBS Section -->
+    <section id="bbs" class="section-padding dark-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">MEMBERS BOARD</h2>
+                <p>お知らせ・連絡掲示板</p>
+            </div>
+
+            <div class="bbs-container">
+                <div class="bbs-post reveal">
+                    <div class="post-header">
+                        <span class="post-date">2026.01.10</span>
+                        <span class="post-cat info">Official</span>
+                    </div>
+                    <h3 class="post-title">春の合宿についてのお知らせ</h3>
+                    <p class="post-body">今年の春合宿の日程が決まりました。詳細は後日MLで流しますが、3月の連休を予定しています！</p>
+                </div>
+                <div class="bbs-post reveal delay-1">
+                    <div class="post-header">
+                        <span class="post-date">2026.01.08</span>
+                        <span class="post-cat event">Event</span>
+                    </div>
+                    <h3 class="post-title">週末の飲み会 🍻</h3>
+                    <p class="post-body">今週土曜日の練習後、駅前の居酒屋で新年会をやります。参加できる人は調整ちゃんに入力してね。</p>
+                </div>
+                <div class="bbs-post reveal delay-2">
+                    <div class="post-header">
+                        <span class="post-date">2026.01.05</span>
+                        <span class="post-cat match">Match</span>
+                    </div>
+                    <h3 class="post-title">市民大会のエントリー開始</h3>
+                    <p class="post-body">ダブルスのペアを探している人は、早めに掲示板かLINEで声をかけてください！</p>
+                </div>
+            </div>
+
+            <div class="center-btn">
+                <a href="#" class="btn-secondary">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join / Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container contact-wrapper">
+            <div class="contact-info">
+                <h2>READY TO<br>JOIN?</h2>
+                <p>見学・体験は随時受付中。<br>まずは気軽にお問い合わせください。</p>
+
+                <ul class="contact-list">
+                    <li><span>Email:</span> hello@smashclub.example</li>
+                    <li><span>Insta:</span> @smash_club_official</li>
+                </ul>
+            </div>
+
+            <form id="contact-form" class="glass-form">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="4" required placeholder=" "></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn-primary block-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">SMASH CLUB</div>
+            <p class="copyright">&copy; 2026 Smash Club. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
